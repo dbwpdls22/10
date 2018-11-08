@@ -10,10 +10,13 @@ int main(int argc, char *argv[])
 	int* ptr;
 	
 	ptr=&x;
-	printf("ptr: %i\n", *ptr);
+	printf("x: %i\n", *ptr);
 	
 	ptr=&y;
-	printf("ptr: %i\n", *ptr);
+	printf("y: %i\n", *ptr);
 	
+	ptr=&x;
+	*ptr=20;
+	printf("x: %i\n", x);
 	return 0;
 }
